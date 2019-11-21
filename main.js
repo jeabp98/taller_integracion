@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
 var express = require("express");
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 var main = function () {
     var app = express();
     app.set('view engine', 'pug');
